@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    /* font-weight: 400; */
+}
+
+:root{
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --text-color: #3a3a3a;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-559aacb5: #4054B2;
+    --e-global-color-17aef4c7: #23A455;
+    --e-global-color-4b943b5d: #000;
+    --e-global-color-6cc066a2: #FFF;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+}
+
+:root {
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+}
+
+.font{
+    font-weight: 400;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    height: 100vh;
+    margin: 0 6rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(6rem, 1fr)) repeat(2, minmax(min-content, 60rem)) repeat(1, minmax(6rem, 1fr));
+    grid-template-rows: min-content 1fr;
+    /* background: tomato; */
+}
+header nav{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0 .3rem;
+}
+.logo{
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+header nav ul li a{
+    color: #54595F;
+}
+
+.header-banner{
+    grid-column: 1/-1;
+    width: 100%;
+    background: url(./images/dillon-mangum-9489sFfgk4c-unsplash.jpg);
+    background-size: cover;
+    background-position: left;
+    padding: 6em 8em;
+}
+
+.header-banner h1{
+    
+    font-size: 4em;
+    font-weight: 600;
+    color: #455a64;
+    margin-bottom: 2rem;
+}
+
+.header-banner a{
+    color: #455a64;
+    padding: .8em 2em;
+    border: 2.5px solid #455a64;
+    transition: .2s;
+}
+
+.nav-toggle{
+    font-size: 2rem;
+    display: none;
+}
+
+.header-banner a:hover{
+    background:  #455a64;
+    color: #fff;
+}
+
+.bag{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+
+.chair-collection{ 
+    height: 320px;
+    /* background: tomato; */
+    margin: 2rem 6rem 1rem;
+    display: grid;
+    grid-template-columns: 30% 69%;
+    column-gap: 1rem;
+}
+
+.modern-collection{
+    height: 320px;
+     /* background: tomato; */
+     margin: 1rem 6rem 2rem;
+    display: grid;
+    grid-template-columns: 69% 30%;
+    /* justify-content: space-between; */
+    column-gap: 1rem;
+    /* place-items: center; */
+} 
+.collection-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
+.collection-content{
+    width: 100%;
+    height: 320px;
+    background: url(./images/engin-akyurt-mRmhx5NfYAo-unsplash.jpg);
+    background-size: cover;
+    color:  #607d8b;
+    padding: 3rem 6rem;
+    /* font-weight: bold; */
+}
+.collection-content h3{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.collection-content p{
+    margin: 1rem 0 2rem;
+}
+
+.collection-content span{
+    margin-top: 20px;
+}
+
+.collection-content a{
+    padding: .9rem 2rem;
+    border: 2.5px solid #455a64;
+    color: #455a64;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.collection-content a:hover{
+    background-color: #455a64; 
+    color: #fff;
+}
+
+
+.extra-services{
+    margin: 2rem 4rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    place-items: center;
+}
+.extra-services img{
+    width: 80px;
+}
+
+.extra-services p{
+    color:  #607d8b;
+}
+
+.offer{
+    margin: 2rem 6rem;
+    height: 280px;
+    background: url(./images/suchit-poojari-ljRiZl00n18-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    z-index: -1000;
+    padding: 3rem 4rem;
+    color:  #455a64;
+}
+
+.offer h1{
+    font-size: 2.4em;
+}
+.offer h2{
+    margin-bottom: 1rem;
+    font-size: 2.2em;
+}
+
+.offer a{
+    padding: 1rem 1.6rem;
+    border: 2.5px solid #455a64;
+    color: #455a64;
+    transition: all .2s;
+}
+
+.offer a:hover{
+    background: #455a64;
+    color: #fff;
+}
+
+
+.products{
+    margin: 3.5rem 6rem;
+}
+
+.products a{
+    font-size: 1.2rem;
+    color: #607d8b;
+}
+
+.products h1{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #455a64;
+    font-size: 2.4em;
+
+}
+
+.products-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.products-content img{
+    width: 100%;
+    height: 100%;
+
+}
+.product{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.6);
+}
+
+.testimonials{
+    background:  #b1e6fd;
+    padding: 1.5rem 3rem;
+    margin: 2rem 6rem;
+    color: #455a64;
+}
+
+.testimonial-contact{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: baseline;
+}
+.testimonials img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonials h1{
+    text-align: center;
+    color: #455a64;
+    font-size: 2.4em;
+}
+.testimonials p{
+    font-size: 1.2em;
+    text-align: center;
+}
+.testimonials .content{
+    padding: 2.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 1.5rem;
+}
+
+.contact{
+    margin: 0 5rem 2rem;
+    height: 280px;
+    background: url(./images/kelina-cyril-UbRxQui2xjg-unsplash.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.contact h3{
+    font-size: 2.4em;
+}
+.contact ul{
+    display: flex;
+}
+.contact ul li a{
+    padding: .8rem;
+    margin: .3rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact ul li a ion-icon{
+    color:  #607d8b;
+    font-size: 1.6rem;
+}
+
+footer{
+    /* background: tomato; */
+    margin: 1rem 6rem .9rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+footer h5{
+    color: #607d8b;
+    margin-bottom: .8rem;
+    font-size: 1.3em;
+}
+
+footer ul li a{
+    color: #808285;
+    line-height: 1.5;
+    font-size: 1.2em;
+    transition: .3s;
+}
+
+footer ul li a:hover{
+    color: #607d8b;
+}
+
+.question h5{
+    margin-bottom: 2rem;
+}
+
+.question a{
+    padding: 1rem;
+    border: 1px solid  #607d8b;
+    color: #808285;
+    transition: all .2s;
+}
+
+.question a:hover{
+    background: #607d8b;
+    color: #fff;
+}
+
+@media (max-width: 968px){
+    body{
+        font-size: 13px;
+    }
+    .header-banner{
+        background-position: center;
+    }
+}
+
+@media (max-width: 678px){
+
+    body{
+        font-size: 12.5px;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    .chair-collection,.modern-collection{
+        grid-template-columns: 1fr;
+        grid-template-rows: reversed;
+
+    }
+
+}
